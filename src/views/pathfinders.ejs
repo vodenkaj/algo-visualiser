@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="/styles.css">
+	<script src='/pathfinders_front.js' defer></script>
+	<script src='/canvas_manager.js' defer></script>
+	<script src='/maze_generators.js' defer></script>
+	<script src='/pathfinders.js' defer></script>
+	<meta charset="utf-8">
+	<title>Pathfinders - Algo Visualiser</title>
+</head>
+<%- include('layouts/nav') %>
+<body>
+	<div class='options-wrapper'>
+		<button id='start'>Find path</button>
+		<select id='algo-selector'>
+			<option>Breadth-first Search</option>
+			<option>Depth-first Search</option>
+			<option>Dijkstra's Algorithm</option>
+			<option>Greedy Best-first Search</option>
+			<option>A* Algorithm</option>
+		</select>
+		<button id='generate-maze'>Generate maze</button>	
+		<select id='maze-algo-selector'>
+			<option>Recursive Backtracking</option>
+			<option>Randomized Prim's Algorithm</option>
+			<option>Recursive Division Algorithm</option>
+		</select>
+		<input id='maze-size'type="number" placeholder='Size (column)'>
+		<input id='animation-speed' type='number' placeholder='Delay (ms)'>
+		<button id='clear-board'><span></span></button>
+	</div>
+	<div class='wrapper'>
+		<canvas id='canvas'></canvas>
+	</div>
+</body>
+</html>

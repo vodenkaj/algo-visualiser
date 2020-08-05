@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script src='/sorters_front.js' defer></script>
+	<script src='/sorters.js' defer></script>
+	<link rel="stylesheet" type="text/css" href="/styles.css">
+	<title>Sorters - Algo Visualiser</title>
+</head>
+<%- include('layouts/nav') %>
+<body>
+	<div class='options-wrapper'>
+		<button id='start-sort'>Sort</button>
+		<select id='algo-selector'>
+			<option>Selection sort</option>
+			<option>Bubble sort</option>
+			<option>Insertion sort</option>
+			<option>Merge sort</option>
+			<option>Heap sort</option>
+			<option>Quick sort</option>
+			<option>Radix sort</option>
+			<option>Counting sort</option>
+			<option>Shell sort</option>
+		<option>Comb sort</option>
+	</select>
+	<button id='new-values'>Generate data</button>
+	<input id='amount-of-values' type='number' placeholder='Amount'>
+	<input id='animation-speed' type='number' placeholder='Delay (ms)'>
+	</div>
+	<div class='wrapper flip'></div>
+</body>
+</html>
